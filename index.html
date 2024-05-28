@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="kr" style="margin: 0; padding: 0; height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <title>체계적인 음악, 오케스트라</title>
+</head>
+<body style="margin: 0; padding: 0; height: 100%;">
+    <div class="nav" id="navbar">
+        <div class="logo">Harmonic grid</div>
+        <div class="logo-1">체계적인 음악, 오케스트라</div>
+        <ul class="menu flex">
+            <li><a href="#aaa">오케스트라 소개</a></li>
+            <li><a href="#bbb">오케스트라 배치</a></li>
+            <li><a href="#ccc">오케스트라 분류</a></li>
+            <li><a href="#ddd">모던 오케스트라</a></li>
+        </ul>
+    </div>
+    <div class="opening">
+        <div class="rectangle-1">
+            <video class="video-background" autoplay muted loop>
+                <source src="./assets/videos/ALPHA696_web_banner_desktop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="vector-5"></div>
+        <div class="vector-123"></div>
+        <span class="sound-0" id="sound-0" data-speed="1">다양한</span>
+        <div class="sound" id="sound" data-speed="2">
+            <span class="sound-3">음</span><span class="this">이</span>
+        </div>
+        <div class="united" id="united" data-speed="3">
+            <span class="one">하나</span><span class="united-4">로 </span>
+        </div>
+        <span class="blending" id="blending" data-speed="4">어우러지는</span>
+        <span class="moment" id="moment" data-speed="5">순간</span>
+        
+        <div class="line"></div>
+        <span class="riccardo-muti">Riccardo Muti (2006)-Magic Flute overture at the Salzburg festival 2006. Mozart</span>
+        <span class="read-more">내려서 더보기</span>
+        <div class="vector-6"></div>
+        <div class="line-1-1"></div>
+
+
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            // 기존 스크롤 이벤트
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > window.innerHeight) {
+                navbar.classList.add('visible');
+            } else {
+                navbar.classList.remove('visible');
+            }
+    
+            // 새로운 스크롤 이벤트
+            var scrolled = window.pageYOffset;
+            var elementsRight = ['sound-0', 'sound'];
+            var elementsLeft = ['united', 'blending', 'moment'];
+    
+            window.requestAnimationFrame(function() {
+                elementsRight.forEach(function(id) {
+                    var element = document.getElementById(id);
+                    var speed = 0.5; // 이동 속도 조절
+                    var newTransform = 'translate3d(' + (speed * scrolled) + 'px, 0px, 0px)';
+                    element.style.transform = newTransform;
+                });
+                elementsLeft.forEach(function(id) {
+                    var element = document.getElementById(id);
+                    var speed = 0.5; // 이동 속도 조절
+                    var newTransform = 'translate3d(' + (-speed * scrolled) + 'px, 0px, 0px)';
+                    element.style.transform = newTransform;
+                });
+            });
+        });
+    </script>
+    
+          <div class="flex-row-cea">
+            <div class="vector-8">
+              <div class="vector-9"></div>
+              <span class="diverse-instruments-orchestra"
+                >다양한 악기가 모여, 하나의 노래를 만들어내는 순간<br />오케스트라에
+                대해 알아보자</span>
+              
+            </div>
+            <div class="vector-a">
+              <div class="frame">
+                <span class="orchestra-concept"
+                  >다양한 악기와 구성 알아보기</span>
+              </div>
+              <div class="frame-b">
+                <span class="orchestra-concept-c">오케스트라의 개념부터</span>
+              </div>
+            </div>
+            <div class="vector-d"><span class="history">History</span></div>
+            <div class="vector-39"></div>
+
+
+          </div>
+
+          <div class="flex-row-cac">
+            <div class="line-1-1-1"></div>
+            <div class="flex-row-a">
+                <span class="orchestra-origin">오케스트라의 기원</span>
+                <div class="vector-2f"></div>
+                <div class="short-history-orchestra">
+                  <span class="classical-music-orchestra"
+                    >클래식 음악과는 달리<br />오케스트라의 </span
+                  ><span class="short-history-200-years">짧은 200년의 역사</span>
+                </div>
+                <div class="ellipse-30"></div>
+              </div>    
+              <span class="vector-31"
+              >오케스트라의 개념은 클래식 음악이라는 역사 속에서 생긴지 200년이 채
+              되지 않는데, 악기라는 것이 인류의 역사와 함께 계속해서 발명되고
+              변화되어 왔지만 오케스트라가 필요할 정도의 큰 규모의 음악이 필요했던
+              것은 최근의 일입니다.</span
+            ><span class="orchestra-concept-32"
+              >‘오케스트라’라는 단어는 고대 그리스의 극장에서 합창단이 노래를
+              부르거나 춤추도록 무대 앞에 약간 낮게 만들어지 반원형의 공간을
+              뜻했는데, 이처럼 합주단이 있던 ‘낮은 공간’이라는 의미가 이후에
+              ‘합주단 자체’를 통칭하게 되었습니다</span>
+              <div class="flex-row-f-33">
+                <div class="image-34"><div class="ellipse-35"></div></div>
+                <span class="orchestra-location-greece"
+                  >고대 그리스의 오케스트라의 위치</span
+                >
+                <div class="ellipse-36"></div>
+                <div class="image-37"></div>
+                <div class="image-38"></div>
+              </div>
+    
+            <div class="line-29"></div>
+            <div class="vector-2a"></div>
+            <div class="ellipse-2b"></div>
+            <div class="image"></div>
+            <div class="vector-2c"></div>
+            <div class="group-2d"></div>
+            <span class="conductor-2e">지휘자</span>
+
+
+            <div class="vector-10"></div>
+            <div class="vector-e"></div>
+            <div class="group-3a"></div>
+            <div class="vector-2a"></div>
+            <div class="vector-2c"></div>
+          
+        </div>
+
+
+          </div>
+
+</body>
+</html>
